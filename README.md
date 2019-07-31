@@ -42,18 +42,23 @@ Libraries required:
 	scipy==0.18
 	scikit-learn>=0.18
 
-4 simple steps to download this repo, run in your local server and work on it accordingly.
+5 simple steps to download this repo, run in your local server and work on it accordingly.
 
 Step 1.
         Download or clone this repo.
 
 Step 2.
+	Create a bin Folder inside the repo and download this weights from the link and paste it inside this bin folder
+	https://drive.google.com/drive/folders/1hUY_n_H7jhdL9Z8yKKHZFB0wILGW_prH?usp=sharing
+	(note-it is very big so couldn't upload it in the github)
+	
+Step 3.
         Get the requirments by typing in the command.
         pip install -r requirements.txt
         
-Step 3.
+Step 4.
         You are good to go.
         RUN $python app.py
      
-Step 4.
+Step 5.
         Open http://127.0.0.1:5000/ in your browser
