@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Image or Video</title>
+</head>
+<body>
+
+<h1>Upload Image or Video</h1>
+<form action="http://127.0.0.1:5000/{{dowhat}}.html" method="post" enctype="multipart/form-data">
+    <input type="file" name="fileToUpload" id="fileToUpload">
+	<br><br>
+	{{maleorfemale}}
+
+	<input type="submit" value="Submit" name="submit" style="background-color:green;color:white;border:0;padding:10px 20px;">
+</form>
+
+
+<button style="font-size:20px;font-weight:900;color:black;background-color:lightblue;border:0;padding:20px 10px;"><a href='http://127.0.0.1:5000/'>Home</a></button>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+  <link rel="stylesheet" type="text/css" href="templates/style.css">
+
+</head>
+<body>
+<h1> Select One</h1>
+<a href="http://127.0.0.1:5000/imageorvideo.html?dowhat=faceandeye">Face and Eye Detection</a>
+<br><br>
+<a href="http://127.0.0.1:5000/imageorvideo.html?dowhat=celebrity">Celebrity Recognition</a>
+<br><br>
+<a href="http://127.0.0.1:5000/imageorvideo.html?dowhat=object">Object Detection</a>
+<br><br>
+<a href="http://127.0.0.1:5000/imageorvideo.html?dowhat=readtext">Read text</a>
+<br><br>
+<a href="http://127.0.0.1:5000/imageorvideo.html?dowhat=facial">Facial recognition</a>
+<br><br>
+<a href="http://127.0.0.1:5000/imageorvideo.html?dowhat=facialer">Facial Expression recognition</a>
+<br><br>
+<a href="http://127.0.0.1:5000/imageorvideo.html?dowhat=activity">Activity Detection</a>
+<br><br>
+
+</body>
+</html>
+--> 
+<!DOCTYPE html>
+<html lang="en" dir="1tr">
+  <head>
+  	<meta charset="utf-8">
+  	<title>Home</title>
+  	<link rel="stylesheet" type="text/css" href="templates/style.css">
+  </head>
+  <body>
+  	<div class="container">
+  		<form method="get" action="imageorvideo.html">
+		<input type="hidden" name="dowhat" value="faceandeye">
+  		<button class="btn btn1" type="submit">Face and eye detection</button>
+  	</form>
+  	<form method="get" action="imageorvideo.html">
+		<input type="hidden" name="dowhat" value="facialer">
+  		<button class="btn btn2">Face recognition</button>
+  	</form>
+  	<form method="get" action="imageorvideo.html">
+		<input type="hidden" name="dowhat" value="celebrity">
+  		<button class="btn btn3">Celebretiy recognition</button>
+  	</form>
+  	<form method="get" action="imageorvideo.html">
+		<input type="hidden" name="dowhat" value="readtext">
+  		<button class="btn btn4">Read text</button>
+  	</form>
+  	<form method="get" action="imageorvideo.html">
+		<input type="hidden" name="dowhat" value="facial">
+  		<button class="btn btn5">Facial analysis</button>
+  	</form>
+  	<form method="get" action="imageorvideo.html">
+		<input type="hidden" name="dowhat" value="object">
+  		<button class="btn btn5">Object</button>
+  	</form>
+  	<form method="get" action="imageorvideo.html">
+		<input type="hidden" name="dowhat" value="activity">
+  		<button class="btn btn6">Activity detection</button>
+  	</form>
+  	</div>
+
+  </body>
+  </html>

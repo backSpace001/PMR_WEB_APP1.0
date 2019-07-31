@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Image or Video</title>
+</head>
+<body>
+<h1>Upload Image or Video</h1>
+<form action="http://127.0.0.1:5000/{{dowhat}}.html" method="post" enctype="multipart/form-data">
+    <input type="file" name="fileToUpload" id="fileToUpload">
+	<br><br>
+	{% if maleorfemale == "yes" %}
+	<input type='radio' name='gender' value='male' checked> Male<br><input type='radio' name='gender' value='female'> Female<br><br><br>
+	{%endif%}
+
+	<input type="submit" value="Submit" name="submit" style="background-color:green;color:white;border:0;padding:10px 20px;">
+</form>
+{% if dowhat == "faceandeye" %}
+<p> User can input both image and video</p>
+{% endif %}
+{% if dowhat == "celebrity" %}
+<p> For now it can only identify 10 celebrity <br> MALE <br> <br> 1. Leonardo Di Caprio <br>2. Brad Pitt <br> 3. Johnny Depp <br> 4. Robert De Niro <br> 5. Tom Hanks <br> <br> <br> FEMALE <br>1. Courtney Cox <br> 2. Jennifer Anniston<br> 3. Jennifer Lawrence <br> 4. Lisa Kudrow <br> 5.Meryl Streep <br> <br> </p>
+{% endif %}
+{% if dowhat == "object" %}
+<p> both image and video can be tested here</p>
+{% endif %}
+{% if dowhat == "readtext" %}
+<p> Only image can be processed </p>
+{% endif %}
+{% if dowhat == "facial" %}
+<p> only image can be processed</p>
+{% endif %}
+{% if dowhat == "facialer" %}
+<p> only image can be processed</p>
+{% endif %}
+{% if dowhat == "activity" %}
+<p> Put your message here</p>
+{% endif %}
+<br><br><br>
+<a href='http://127.0.0.1:5000/'>Home</a>
+</body>
+</html>
