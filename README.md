@@ -62,3 +62,25 @@ Step 4.
      
 Step 5.
         Open http://127.0.0.1:5000/ in your browser
+
+
+USE-CASES ARE:
+
+1.Face and eyes detection using OpenCV:
+
+OpenCV comes with a trainer as well as a detector. Here I have used OpenCV for detection and later in the project, I will use it to create an XML file of faces for Face recognition. OpenCV already contains many pre-trained classifiers for face, eyes, smiles, etc. Those XML files are stored in the Library/etc/haarcascades. In this part, I have used face cascade and eye cascade to detect face and eyes in an image. OpenCV uses a machine learning algorithm and it contains pre-trained cascade XML files which can detect a face, eyes, etc. This basically breaks the image into pixels and form blocks, it does a very rough and quick test. If that passes, it does a slightly more detailed test, and so on. The algorithm may have 30 to 50 of these stages or cascades, and it will only detect a face if all stages pass.
+This technique works on the Viola-Jones Algorithm, which is a part of deep learning. This statement was said on the context of:- deep learning is a class of machine learning algorithm that learns in supervised (e.g., classification) and/or unsupervised (e.g., pattern analysis) manners.
+This part of face detection is also used in facial recognition section and there I will use this the file as an unrecognized file to be saved in the database and to be used as another face with no name registered.
+
+Example rectangle features shown relative to the enclosing detection window. The sum of the pixels which lie within the white rectangles is subtracted from the sum of pixels in the grey rectangles. Two-rectangle features are shown in (A) and (B). Figure © shows a three-rectangle feature, and (D) a four-rectangle feature.
+2.Facial Recognition
+I have used Deep Learning face recognition embedding. Here I am using deep learning and this technique is called deep metric learning.In deep learning typically a network is trained to:
+1. Accept a single input image
+2. And output a classification/label for that image
+However, deep metric learning is different. Instead, of trying to output a single label (or even the coordinates/bounding box of objects in an image), instead of outputting a real-valued feature vector. For the dlib facial recognition network, the output feature vector is 128-d (i.e., a list of 128 real-valued numbers) that is used to quantify the face. Training the network is done using triplets:
+Facial Recognition via Deep metric learning involves “triplet training step”
+
+I have first created a database for the training set and encoded (128-d) each face image into a numpy array and turn it into an XML file. Second I have imported that trained XML file into the main script to detect and recognize a face.
+3.Celebrity Recognition
+This part is same as the above one the only reason I made it a different sector is because this feature is listed in Amazon’s rekognition project and as this is a similar project I have to add this additional name tag and create a whole new dataset consisting of many known actors.
+Here I have also used deep metric learning techniques.
