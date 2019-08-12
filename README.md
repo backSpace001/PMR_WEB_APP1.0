@@ -3,6 +3,9 @@
 # poor_man_rekognition
 GSOC project 2019
 
+Medium blog: https://medium.com/@b216029 (refer this for detailed information about each use-case)
+independent github code: https://github.com/backSpace001/poor_man_rekognition
+
 Building a free version of Amazon rekognition with maximum possible feature during a 3 months’ time span.
 
 Use-cases:
@@ -111,5 +114,22 @@ https://medium.com/@b216029/report-3-494b2fdbb179  (refer this for this part)
 
 
 7.Scene detection
-
+[note-this part is not included in the web app because of some complexity]
 Scene detection is used for detecting transitions between shots in a video to split it into basic temporal segments. It helps video editors to automate the process of quickly splitting videos in bulk rather than editing it frame by frame by hand.
+To run scene Detection Follow this steps:
+	1.Create an account on Algorithmia (includes 5,000 free credits each month).
+	2.Go to your profile page, click the Credentials tab, and find your API key.
+	3.Find a test video. You can use a public URL (prefer Vimeo over youtube), or upload one to their hosted data storage.
+	4.Install the Python Algorithmia client using the command “pip install algorithmia“.
+	5.Copy the sample code below, replace YOUR_API_KEY with your own key, and run it to extract the scenes from your video!
+import Algorithmia
+client = Algorithmia.client("simSeYQfIQ/XeY+c4pr91rFQQqp1")
+input = {
+  "video": "data://backSpace001/gsoc/sample2.mp4",
+  "detector": "content",
+  "output_collection": "data://.algo/media/SceneDetection/temp"
+}
+result = client.algo("media/SceneDetection/0.1.5").pipe(input).result
+printf (result)
+
+Cheers..!
