@@ -73,7 +73,10 @@ This technique works on the Viola-Jones Algorithm, which is a part of deep learn
 This part of face detection is also used in facial recognition section and there I will use this the file as an unrecognized file to be saved in the database and to be used as another face with no name registered.
 
 Example rectangle features shown relative to the enclosing detection window. The sum of the pixels which lie within the white rectangles is subtracted from the sum of pixels in the grey rectangles. Two-rectangle features are shown in (A) and (B). Figure © shows a three-rectangle feature, and (D) a four-rectangle feature.
+
+
 2.Facial Recognition
+
 I have used Deep Learning face recognition embedding. Here I am using deep learning and this technique is called deep metric learning.In deep learning typically a network is trained to:
 1. Accept a single input image
 2. And output a classification/label for that image
@@ -81,6 +84,32 @@ However, deep metric learning is different. Instead, of trying to output a singl
 Facial Recognition via Deep metric learning involves “triplet training step”
 
 I have first created a database for the training set and encoded (128-d) each face image into a numpy array and turn it into an XML file. Second I have imported that trained XML file into the main script to detect and recognize a face.
+
+
 3.Celebrity Recognition
+
 This part is same as the above one the only reason I made it a different sector is because this feature is listed in Amazon’s rekognition project and as this is a similar project I have to add this additional name tag and create a whole new dataset consisting of many known actors.
 Here I have also used deep metric learning techniques.
+
+
+4.Object detection
+
+Object Detection is the process of finding real-world object instances like car, bike, TV, flowers, and humans in still images or Videos. It allows for the recognition, localization, and detection of multiple objects within an image which provides us with a much better understanding of an image as a whole. It is commonly used in applications such as image retrieval, security, surveillance, and advanced driver assistance systems (ADAS).
+I have performed this using YOLOv2 on an image and a video file. You only look once (YOLO) is a state-of-the-art, real-time object detection system. On a Titan X, it processes images at 40–90 FPS and has an mAP on VOC 2007 of 78.6% and an mAP of 48.1% on COCO test-dev. One can find all the details about YOLOv2 here:
+https://arxiv.org/pdf/1612.08242.pdf
+https://www.youtube.com/watch?v=NM6lrxy0bxs
+
+
+5.Read text in images
+
+Extraction of text from an image is a subpart of image processing and is called OPTICAL CHARACTER RECOGNITION (OCR). I have used Tesseract which is an OCR engine developed by Google. It supports Unicode and has the ability to recognize more than 100 languages.
+
+
+6.Facial expression recognition
+
+https://medium.com/@b216029/report-3-494b2fdbb179  (refer this for this part)
+
+
+7.Scene detection
+
+Scene detection is used for detecting transitions between shots in a video to split it into basic temporal segments. It helps video editors to automate the process of quickly splitting videos in bulk rather than editing it frame by frame by hand.
