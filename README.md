@@ -10,12 +10,12 @@ Building a free version of Amazon rekognition with maximum possible feature duri
 
 Use-cases:
 
-   	1.Face and Eye Detection using OpenCV
-	2.Facial recognition of a video using deep metric learning
-	3.Celebrity Recognition
- 	4.Object Detection
-	5.Read text in images
- 	6.Facial Analysis
+   	1.Face and Eye Detection using OpenCV - - completed 👍
+	2.Facial recognition of a video using deep metric learning - - completed 👍
+	3.Celebrity Recognition - - completed 👍
+ 	4.Object Detection - - completed 👍
+	5.Read text in images - - completed 
+ 	6.Facial Analysis - - completed 👍
  		Sad
  		Happy
  		Angry
@@ -23,9 +23,9 @@ Use-cases:
  		Fear
  		Surprise
  		Neutral
- 	7.Scene Detection
+ 	7.Scene Detection - - completed 👍
 
-Libraries required:
+Libraries required: (requirement.txt is already available in the repository) 
 
 	OpenCV: For using cascade files
 	Numpy: For array operations
