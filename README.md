@@ -114,6 +114,10 @@ https://medium.com/@b216029/report-3-494b2fdbb179  (refer this for this part)
 
 
 7.Scene detection
+
+Citation - www.algorithmia.com
+I have coded to implement my part so as to perform the task, all the data will be provided by algorithmia and can be seen in the algorithmia website itself. My code will mere be a bridge. 
+
 [note-this part is not included in the web app because of some complexity]
 Scene detection is used for detecting transitions between shots in a video to split it into basic temporal segments. It helps video editors to automate the process of quickly splitting videos in bulk rather than editing it frame by frame by hand.
 To run scene Detection Follow this steps:
